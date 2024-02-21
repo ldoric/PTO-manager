@@ -2,7 +2,7 @@
 
 
 Features:
--Sign-in system that validates input data (password must have 8 characters, 1 special character, etc.).
+- Sign-in system that validates input data (password must have 8 characters, 1 special character, etc.).
 -Use of a cookie for sign-in.
 -No database connection; if input is valid, you proceed to the manager page.
 -When closing the browser or clicking sign-off, all data (local storage) is cleared.
