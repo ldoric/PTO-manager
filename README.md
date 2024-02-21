@@ -1,5 +1,6 @@
 # PTO Manager
 
+video demo: https://www.youtube.com/watch?v=8Or9h5GbELo
 
 Features:
 - Sign-in system that validates input data (password must have 8 characters, 1 special character, etc.).
