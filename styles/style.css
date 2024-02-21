@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    min-height: 100vh;
+    background-color: #C3C9E9;
+}
+
+header {
+    background-color: #373f47;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 1rem;
+    color: white;
+}
+
+.sign-out button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: #C3C9E9;
+    border: 1px solid #C3C9E9;
+    border-radius: 5px;
+    color: #373f47;
+    cursor: pointer;
+}
+
+.select-pto-text {
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.calendars-container {
+    margin: 0 auto;
+    margin-top: 2%;
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    justify-content: space-between;
+}
+
+.calendar-container {
+    max-width: 250px;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+}
+
+.arrow-year-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.month-year1,
+.month-year2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #373f47;
+}
+
+.arrow-icons1 span,
+.arrow-icons2 span {
+    height: 40px;
+    width: 40px;
+    font-size: 1.2rem;
+    margin: 0px 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: #373f47;
+}
+
+.arrow-icons1 span:hover,
+.arrow-icons2 span:hover {
+    background-color: #C3C9E9;
+}
+
+.calendar ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.arrow-icons1 span, .arrow-icons2 span{
+    height: 40px;
+    width: 40px;
+    font-size: 1.2rem;
+    margin: 0px 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: #373f47;
+}
+
+.arrow-icons1 span:hover, .arrow-icons2 span:hover{
+    background-color: #C3C9E9;
+}
+
+.arrow-icons1 span,
+.arrow-icons2 span {
+    height: 40px;
+    width: 40px;
+    font-size: 1.2rem;
+    margin: 0px 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: #373f47;
+}
+
+.arrow-icons1 span:hover,
+.arrow-icons2 span:hover {
+    background-color: #C3C9E9;
+}
+
+.calendar ul li {
+    position: relative;
+    width: 14.2857142857%;
+}
+
+.calendar {
+    padding: 12px;
+}
+
+.week li {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #373f47;
+}
+
+.day1 li,
+.day2 li {
+    font-size: 0.8rem;
+    margin-top: 15px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.day1 li::before,
+.day2 li::before {
+    z-index: -1;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    border-radius: 50%;
+}
+
+.day1 li:hover::before,
+.day2 li:hover::before {
+    background-color: #C3C9E9;
+}
+
+.notThisMonth {
+    color: lightgrey;
+}
+
+#selectedDate1::before,
+#selectedDate2::before {
+    background-color: #C3C9E9;
+}
+
+#selectedDate1,
+#selectedDate2 {
+    font-weight: 500;
+    color: #373f47;
+}
+
+.add-container {
+    max-width: 250px;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.add-button {
+    margin-top: 20%;
+    margin-bottom: 10%;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: #C3C9E9;
+    border: 1px solid #C3C9E9;
+    border-radius: 5px;
+    color: #373f47;
+    cursor: pointer;
+}
+
+#employeeSelector {
+    margin-top: 10%;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: #C3C9E9;
+    border: 1px solid #C3C9E9;
+    border-radius: 5px;
+    color: #373f47;
+    cursor: pointer;
+}
+
+.profile-container {
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    margin: 2% auto;
+    padding: 20px;
+    font-size: 0.7rem;
+}
+
+.name-label {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #373f47;
+}
+
+.pto-label {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: left;
+}
+
+.pto-container {
+    overflow: hidden;
+    position: relative;
+    margin: 1% 0;
+}
+
+.pto-content-container {
+    position: relative;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+    margin: 2% 0;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.pto-content-container img {
+    height: 60%;
+    margin-right: 2%;
+}
+
+.pto-content-container p {
+    margin-left: 2%;
+}
+
+.pto-image {
+    border-radius: 5px;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+
+.signin-container{
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    margin: 10% auto;
+    padding: 20px;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signin-container h1 {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.signin-button {
+    margin-top: 10%;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: #C3C9E9;
+    border: 1px solid #C3C9E9;
+    border-radius: 5px;
+    color: #373f47;
+    cursor: pointer;
+}
+
+#inputEmail,
+#inputPassword {
+    margin-top: 10%;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: white;
+    border: 2px solid #C3C9E9;
+    border-radius: 5px;
+    color: #373f47;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .calendars-container {
+        flex-direction: column;
+    }
+
+    .calendar-container,
+    .add-container {
+        max-width: 400px;
+        margin-top: 5%;
+    }
+
+    .add-button{
+        margin-top: 10%;
+    }
+}
